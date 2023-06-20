@@ -1,4 +1,5 @@
 # monorepo-architecture
+
 scalable front end architecture
 
 # App built process
@@ -31,6 +32,7 @@ yarn init
 ```
 
 4. in root install packages
+
 ```
 yarn install
 ```
@@ -41,3 +43,19 @@ yarn install
 8. replace react-scripts in scripts with react-app-rewired
 
 9. from docs copy config-overrides.js
+
+# Useful commands
+
+1. yarn install
+2. yarn workspace [workspace-name] [command-name]
+   example
+
+```
+yarn workspace main start
+```
+
+3. yarn workspaces run [command-name]
+   // Running same comman on all packages (example running tests)
+4. yarn workspaces info
+5. yarn why [package-name]
+   to know why dependency in inside or at root level
