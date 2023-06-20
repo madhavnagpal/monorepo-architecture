@@ -18,7 +18,8 @@ module.exports = function override(config, env) {
   config = rewireBabelLoader.include(
     config,
     resolveApp("../team-a"),
-    resolveApp("../team-b")
+    resolveApp("../team-b"),
+    resolveApp("../core")
   );
 
   // black-list some modules from the babel-loader pipeline
