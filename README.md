@@ -35,3 +35,9 @@ yarn init
 yarn install
 ```
 
+5. Add team-a in main package.json
+6. Add react-app-rewired , and react-app-rewire-babel-loader as dev dependincies
+7. yarn install
+8. replace react-scripts in scripts with react-app-rewired
+
+9. from docs copy config-overrides.js
