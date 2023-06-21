@@ -19,7 +19,8 @@ module.exports = function override(config, env) {
     config,
     resolveApp("../team-a"),
     resolveApp("../team-b"),
-    resolveApp("../core")
+    resolveApp("../core"),
+    resolveApp("../component-library")
   );
 
   // black-list some modules from the babel-loader pipeline

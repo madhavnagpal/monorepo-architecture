@@ -10,7 +10,8 @@
     "test-using-only-yarn-workspace": "yarn workspaces run test",
     "start": "lerna run --scope=main start --stream",
     "test": "lerna run test",
-    "test-last-commit": "lerna run test --since HEAD~1"
+    "test-last-commit": "lerna run test --since HEAD~1",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' + && find . -name 'package-lock.json' -type f -delete && rm -f yarn.lock"
   },
   "devDependencies": {
     "lerna": "^7.0.2"

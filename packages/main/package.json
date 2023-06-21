@@ -17,7 +17,8 @@
     "web-vitals": "^2.1.4",
     "team-a": "*",
     "team-b": "*",
-    "core": "*"
+    "core": "*",
+    "component-library": "*"
   },
   "devDependencies": {
     "react-app-rewired": "2.2.1",
