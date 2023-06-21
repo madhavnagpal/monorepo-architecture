@@ -79,3 +79,9 @@ in simple terms lerna makes managing monorepo easy (we can use yarn workspace an
 }
 
 ```
+
+# Benefits of using lerna over using yarn worspace alone
+
+1. Lerna provides a number of commands that make it easier to manage your monorepo. For example, Lerna has commands for bootstrapping your monorepo, publishing your packages, and managing your versions.
+2. Lerna can help you avoid common problems with monorepos, such as dependency conflicts and version mismatches. Lerna has a number of features that help to ensure that your packages are always using the correct versions of their dependencies.
+3. Lerna can help you improve your workflow by making it easier to run tasks across all of your packages. For example, Lerna can help you run linters, tests, and builds across all of your packages with a single command.
