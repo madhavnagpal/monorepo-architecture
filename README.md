@@ -59,3 +59,23 @@ yarn workspace main start
 4. yarn workspaces info
 5. yarn why [package-name]
    to know why dependency in inside or at root level
+
+### Till now we used yarn workspace to build our monorepo, now lets learn a new tool i.e lerna
+
+in simple terms lerna makes managing monorepo easy (we can use yarn workspace and lerna together)
+
+# Adding lerna
+
+1. yarn add -WD lerna
+   adding lerna as dev dependency in workspace root level
+
+2. Add lerna.json
+
+```
+{
+  "npmClient": "yarn",
+  "packages": ["packages/*"],
+  "version": "1.0.0"
+}
+
+```

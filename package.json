@@ -6,6 +6,12 @@
     ]
   },
   "scripts": {
-    "start": "yarn workspace main start"
+    "start-using-only-yarn": "yarn workspace main start",
+    "test-using-only-yarn-workspace": "yarn workspaces run test",
+    "start": "lerna run --scope=main start --stream",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^7.0.2"
   }
 }
