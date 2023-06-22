@@ -103,3 +103,25 @@ Two types of versioning
 // in case of independent
 "version": "independent"
 ```
+
+## versioning based on convention commit
+
+```
+yarn lerna version --conventional-commits
+```
+
+1. fix -- patch
+2. feat -- minor
+3. BREAKING_CHANGE -- major
+
+example if u use convention commit in 2 scenarios
+
+### in core
+
+1. if you have fix -> if will release patch of all (+ 0.0.1 to core, team-a, team-b, main)
+2. if you add feature -> it will release (+ 0.1 - means release next minor of core, while next patch of team-a, team-b, main (which are dependent on core))
+
+### in main
+
+1. if you release feature -> only release next minor of main
+2. if you release fix -> only release next patch of main
