@@ -125,3 +125,19 @@ example if u use convention commit in 2 scenarios
 
 1. if you release feature -> only release next minor of main
 2. if you release fix -> only release next patch of main
+
+# Adding storybook and unit test in component library
+
+In package component-library
+
+1. npx storybook init
+
+// in video needed to be done manually but with v7, its done automatically (step 2,3,4)
+
+2. yarn add @storybook/react -D // basic storybook mechanism customized to react
+
+3. yarn add @storybook/testing-library -D
+
+4. yarn add @storybook/addon-links @storybook/addon-essentials @storybook/addon-interactions -D
+
+on 8:06 mins in video of jack
