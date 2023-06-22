@@ -85,3 +85,21 @@ in simple terms lerna makes managing monorepo easy (we can use yarn workspace an
 1. Lerna provides a number of commands that make it easier to manage your monorepo. For example, Lerna has commands for bootstrapping your monorepo, publishing your packages, and managing your versions.
 2. Lerna can help you avoid common problems with monorepos, such as dependency conflicts and version mismatches. Lerna has a number of features that help to ensure that your packages are always using the correct versions of their dependencies.
 3. Lerna can help you improve your workflow by making it easier to run tasks across all of your packages. For example, Lerna can help you run linters, tests, and builds across all of your packages with a single command.
+
+# Lerna versioning
+
+```
+lerna version
+```
+
+Two types of versioning
+
+1. locked (same version of each package, and main repo, on each update version of all updates)
+2. independent (each package has independent versions)
+
+```
+// in locked
+"version": "1.0.0" // add initial version, it will increment with each time you use lerna version
+// in case of independent
+"version": "independent"
+```
