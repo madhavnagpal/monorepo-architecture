@@ -141,3 +141,5 @@ In package component-library
 4. yarn add @storybook/addon-links @storybook/addon-essentials @storybook/addon-interactions -D
 
 on 8:06 mins in video of jack
+
+# These were good, but even greater scalable monorepos are build by nx.dev
